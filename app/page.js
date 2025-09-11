@@ -6,6 +6,7 @@ import MarketBestPracticeAdoption from "@/components/MarketBestPracticeAdoption"
 import OurReferees from "@/components/OurReferees";
 import CaseStudies from "@/components/CaseStudies";
 import OurWork from "@/components/OurWork";
+import Team from "@/components/Team";
 ;
 
 
@@ -20,6 +21,7 @@ export default function Home() {
       <OurReferees />
       <CaseStudies />
       <OurWork />
+      <Team />
     </div>
   );
 }
