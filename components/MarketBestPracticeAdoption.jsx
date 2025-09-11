@@ -6,8 +6,6 @@ const steps = [
     title: "Record keeping",
     desc: " client on the project. Contact reports, meetings minutes, scope change documents",
     icon: <FileText className="w-10 h-10 text-red-600" />,
-
-
   },
   {
     id: "02",
@@ -44,7 +42,7 @@ const steps = [
 
 export default function MarketBestPracticeAdoption() {
   return (
-    <section className="py-16 bg-red-600 text-white">
+    <section className="py-16 bg-red-800 text-white">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-2">Market Best Practice Adoption</h2>
         <p className="mb-12 font-bold opacity-90">We keep project files where all dealings and learnings relating to the projects are stored. The dealings include;

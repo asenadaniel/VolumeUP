@@ -1,36 +1,3 @@
-// import { Tv, Video, Briefcase, Calendar, ClipboardList, FileText } from "lucide-react";
-
-// const services = [
-//   { title: "TV and Radio", icon: <Tv className="w-10 h-10 text-blue-700" /> },
-//   { title: "Content Production", icon: <Video className="w-10 h-10 text-indigo-600" /> },
-//   { title: "Marketing Management", icon: <Briefcase className="w-10 h-10 text-sky-700" /> },
-//   { title: "Events", icon: <Calendar className="w-10 h-10 text-orange-600" /> },
-//   { title: "Projects", icon: <ClipboardList className="w-10 h-10 text-blue-500" /> },
-//   { title: "Content Development", icon: <FileText className="w-10 h-10 text-red-600" /> },
-// ];
-
-// export default function Services() {
-//   return (
-//     <section className="py-16 max-w-3xl mx-auto bg-gray-50">
-//       <div className="container mx-auto px-4 text-center">
-//         <h2 className="text-3xl font-bold mb-12">Our Services</h2>
-
-//         <div className="grid md:grid-cols-3 gap-8">
-//           {services.map((service, index) => (
-//             <div
-//               key={index}
-//               className="flex flex-col items-center bg-white rounded-2xl shadow-md hover:shadow-lg p-6 transition"
-//             >
-//               <div className="mb-4">{service.icon}</div>
-//               <h3 className="text-lg font-semibold">{service.title}</h3>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
 import React from 'react'
 import Title from './Title';
 import { Tv, Video, Briefcase, Calendar, ClipboardList, FileText } from "lucide-react";
