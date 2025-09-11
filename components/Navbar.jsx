@@ -9,7 +9,7 @@ function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="flex justify-between items-center px-4 sm:px-2 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl bg-white font-medium">
+    <div className="flex justify-between items-center px-4 sm:px-2 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl bg-white font-medium border ">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <Image src="/volume.jpg" alt="VolumeUpDotCom Logo" width={50} height={50} />
@@ -43,16 +43,16 @@ function Navbar() {
           />
         </div>
 
-        <Link onClick={() => setOpen(false)} href="#" className="sm:hover:border-b">
+        <Link onClick={() => setOpen(false)} href="/" className="sm:hover:border-b">
           Home
         </Link>
-        <Link onClick={() => setOpen(false)} href="#services" className="sm:hover:border-b">
+        <Link onClick={() => setOpen(false)} href="/#services" className="sm:hover:border-b">
           Services
         </Link>
-        <Link onClick={() => setOpen(false)} href="#our-work" className="sm:hover:border-b">
+        <Link onClick={() => setOpen(false)} href="/#our-work" className="sm:hover:border-b">
           Our Work
         </Link>
-        <Link onClick={() => setOpen(false)} href="#contact-us" className="sm:hover:border-b">
+        <Link onClick={() => setOpen(false)} href="/#contact-us" className="sm:hover:border-b">
           Contact Us
         </Link>
       </div>

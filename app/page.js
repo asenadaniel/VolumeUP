@@ -5,6 +5,8 @@ import Services from "@/components/Services";
 import MarketBestPracticeAdoption from "@/components/MarketBestPracticeAdoption";
 import OurReferees from "@/components/OurReferees";
 import CaseStudies from "@/components/CaseStudies";
+import OurWork from "@/components/OurWork";
+;
 
 
 export default function Home() {
@@ -17,6 +19,7 @@ export default function Home() {
       <Process />
       <OurReferees />
       <CaseStudies />
+      <OurWork />
     </div>
   );
 }

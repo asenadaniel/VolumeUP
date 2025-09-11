@@ -3,7 +3,7 @@ import React from 'react'
 
 function Mission() {
   return (
-    <div className="py-6 container mx-auto px-4">
+    <div className="py-10 container mx-auto px-4">
       <h2 className="text-2xl text-center font-bold mb-3 text-[#72120e]">Our Mission </h2>
       <p className="max-w-3xl mx-auto text-gray-700 leading-relaxed">
         Help local and international brands proffer and implement cutting-edge
