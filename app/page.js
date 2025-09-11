@@ -1,9 +1,8 @@
-
-
 import Process from "@/components/Process";
 import Hero from "@/components/Hero";
 import Mission from "@/components/Mission";
 import Services from "@/components/Services";
+import MarketBestPracticeAdoption from "@/components/MarketBestPracticeAdoption";
 
 
 export default function Home() {
@@ -12,6 +11,7 @@ export default function Home() {
       <Hero />
       <Mission />
       <Services />
+      <MarketBestPracticeAdoption />
       <Process />
     </div>
   );

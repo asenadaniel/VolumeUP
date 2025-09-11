@@ -10,7 +10,7 @@ function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="flex justify-between items-center px-4 sm:px-2 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl font-medium">
+    <div className="flex justify-between items-center px-4 sm:px-2 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl bg-white font-medium">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <Image src="/volume.jpg" alt="VolumeUpDotCom Logo" width={50} height={50} />
