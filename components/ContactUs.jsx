@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from './Title'
-import { A Check, Mail, User } from 'lucide-react'
+import { Check, Mail, User } from 'lucide-react'
 
 
 function ContactUs() {
