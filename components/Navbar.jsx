@@ -32,14 +32,14 @@ function Navbar() {
             alt="VolumeUpDotCom Logo"
             width={40}
             height={40}
-            className="absolute left-4 top-4 sm:hidden"
+            className="absolute left-4 top-7 sm:hidden"
           />
-          <p className="absolute top-5 left-[60px] sm:hidden">VolumeUP</p>
+          <p className="absolute top-8 left-[60px] sm:hidden">VolumeUP</p>
           <Image
             src={assets.close_icon}
             width={20}
             height={20}
-            className="absolute right-4 top-4 sm:hidden cursor-pointer"
+            className="absolute right-4 top-8 sm:hidden cursor-pointer"
             alt="close icon"
             onClick={() => setOpen(false)}
           />
