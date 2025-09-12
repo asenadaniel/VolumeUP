@@ -1,18 +1,32 @@
+'use client'
 import { Award, Handshake, Heart, ListCheck, ShieldCheck } from 'lucide-react'
 import React from 'react'
+import { motion } from "motion/react"
+import Title from './Title'
 
 function Mission() {
   return (
     <div className="py-10 container mx-auto px-4">
-      <h2 className="text-2xl text-center font-bold mb-3 text-[#72120e]">Our Mission </h2>
-      <p className="max-w-3xl mx-auto text-gray-700 leading-relaxed">
+      <Title className='text-center ' title='Our Misson' description={null} />
+      <motion.p initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }} className="max-w-3xl mx-auto text-gray-700 mb-9 leading-relaxed">
         Help local and international brands proffer and implement cutting-edge
         strategies capable of profitably achieving our client’s marketing needs
         without compromising on quality and best practice at any particular time.
-      </p>
+      </motion.p>
 
-      <h3 className="text-2xl mt-8 mb-4 text-center font-bold text-[#72120e]">Core Values</h3>
-      <div className="grid md:grid-cols-5 gap-4 max-w-3xl mx-auto text-gray-700 leading-relaxed">
+
+      <Title className='text-center' title='Core Values' description={null} />
+
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }}
+
+        className="grid md:grid-cols-5 gap-4 max-w-3xl mx-auto text-gray-700 leading-relaxed">
         {[
           { title: "Integrity", icon: <ShieldCheck /> },
           { title: "Excellence", icon: <Award /> },
@@ -32,7 +46,7 @@ function Mission() {
             </div>
           )
         )}
-      </div>
+      </motion.div>
     </div>
   )
 }

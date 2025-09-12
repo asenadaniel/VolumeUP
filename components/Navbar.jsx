@@ -4,7 +4,7 @@ import assets from '@/public/assets/assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-// import { motion } from "motion/react"
+import { motion } from "motion/react"
 
 
 
@@ -15,8 +15,10 @@ function Navbar() {
   const active = useActiveSection(["home", "services", "our-work", "contact-us"]);
 
   return (
-    <div
-
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       className="flex justify-between items-center px-4 sm:px-2 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-3xl bg-white/70 border-red-800 border-b-2  font-medium ">
       {/* Logo */}
       <div className="flex items-center gap-1">
@@ -103,7 +105,7 @@ function Navbar() {
           <Image src={assets.arrow_icon} width={14} height={14} alt="arrow" />
         </a>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

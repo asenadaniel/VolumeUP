@@ -1,8 +1,10 @@
+'use client'
 import React from 'react'
 import Title from './Title';
 import { Tv, Video, Briefcase, Calendar, ClipboardList, FileText } from "lucide-react";
 import ServiceCard from './ServiceCard';
 import GrowthStrategy from './GrowthStrategy';
+import { motion } from "motion/react"
 
 function Services() {
 
@@ -16,7 +18,13 @@ function Services() {
   ];
 
   return (
-    <div id='services' className=' relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 py-28 text-gray-700'>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ staggerChildren: 0.2 }}
+
+      id='services' className=' relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 py-28 text-gray-700'>
       <Title
         title="Our Services"
         description="From strategy to execution, we craft experiential marketing and media solutions that move your brand forward."
@@ -44,7 +52,7 @@ function Services() {
 
         <GrowthStrategy />
       </div>
-    </div>
+    </motion.div>
   )
 }
 
