@@ -14,7 +14,7 @@ function Navbar() {
       {/* Logo */}
       <div className="flex items-center gap-2">
         <Image src="/volume.jpg" alt="VolumeUpDotCom Logo" width={50} height={50} />
-        <Link href="/#home" className="font-bold text-xl text-[#bc383b]">
+        <Link href="/#home" className="font-bold text-lg md:text-xl text-[#bc383b]">
           VolumeUp
         </Link>
       </div>
