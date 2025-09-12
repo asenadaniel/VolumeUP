@@ -16,7 +16,7 @@ function Services() {
   ];
 
   return (
-    <div id='services' className=' relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 py-18 text-gray-700'>
+    <div id='services' className=' relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 py-28 text-gray-700'>
       <Title
         title="Our Services"
         description="From strategy to execution, we craft experiential marketing and media solutions that move your brand forward."
