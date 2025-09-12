@@ -22,7 +22,7 @@ function Navbar() {
       {/* Menu */}
       <div
         className={`text-gray-700 sm:text-sm ${open ? 'max-sm:w-60 max-sm:pl-10' : 'max-sm:w-0 max-sm:overflow-hidden'}
-          max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-[#482928] 
+          max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-[#482928] max-sm:border-l-4 max-sm:border-red-900
           max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}
       >
         {/* Mobile header */}
