@@ -1,12 +1,15 @@
 import assets from '@/public/assets/assets'
 import Image from 'next/image'
 import React from 'react'
+import { motion } from "motion/react"
 
 function Hero() {
   return (
     <div id='home' className=' flex flex-col items-center gap-6 py-10 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700'>
 
-      <div className=' inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full'>
+      <div
+
+        className=' inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full'>
         <Image
           src={assets.group_profile} width={30} height={30} alt='group' />
         <p className=' text-xs font-medium'>Trusted by people</p>

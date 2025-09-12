@@ -22,7 +22,7 @@ function Services() {
         description="From strategy to execution, we craft experiential marketing and media solutions that move your brand forward."
       />
 
-      <div className=' flex flex-col md:grid grid-cols-2'>
+      <div className='  flex-col md:grid grid grid-cols-2 md:grid-col-2'>
         {services.map((service, index) => (
           <ServiceCard key={index} service={service} index={index} />
         ))}
