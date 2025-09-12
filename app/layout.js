@@ -1,6 +1,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import LayoutClientWrapper from "@/components/LayoutClientWrapper";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Manrope = localFont({
   src: "../app/fonts/Manrope-VariableFont_wght.ttf",
@@ -24,7 +25,10 @@ export default function RootLayout({ children }) {
         <meta httpEquiv="Expires" content="0" />
       </head>
       <body className={`${Manrope.variable} antialiased`}>
-        <LayoutClientWrapper>{children}</LayoutClientWrapper>
+        <LayoutClientWrapper>
+          {children}
+          <ScrollToTop />
+        </LayoutClientWrapper>
       </body>
     </html>
   );
