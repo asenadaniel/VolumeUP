@@ -8,6 +8,7 @@ import CaseStudies from "@/components/CaseStudies";
 import OurWork from "@/components/OurWork";
 import Team from "@/components/Team";
 import Footer from "@/components/Footer";
+import ContactUs from "@/components/ContactUs";
 ;
 
 
@@ -23,6 +24,7 @@ export default function Home() {
       <CaseStudies />
       <OurWork />
       <Team />
+      <ContactUs />
       <Footer />
     </div>
   );
