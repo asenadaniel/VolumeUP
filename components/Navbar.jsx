@@ -10,7 +10,7 @@ function Navbar() {
   const active = useActiveSection(["home", "services", "our-work", "contact-us"]);
 
   return (
-    <div className="flex justify-between items-center px-4 sm:px-2 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl border-red-800 border-b-2  font-medium ">
+    <div className="flex justify-between items-center px-4 sm:px-2 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-3xl bg-white/70 border-red-800 border-b-2  font-medium ">
       {/* Logo */}
       <div className="flex items-center gap-1">
         <Image src="/volume.jpg" alt="VolumeUpDotCom Logo" width={50} height={50} />
@@ -22,7 +22,7 @@ function Navbar() {
       {/* Menu */}
       <div
         className={`text-gray-700 sm:text-sm ${open ? 'max-sm:w-60 max-sm:pl-10' : 'max-sm:w-0 max-sm:overflow-hidden'}
-          max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-[#482928] max-sm:border-l-4 max-sm:border-red-900
+          max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-[#482928] max-sm:border-l-5 max-sm:border-red-900
           max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}
       >
         {/* Mobile header */}
