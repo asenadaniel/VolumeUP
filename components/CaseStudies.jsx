@@ -33,17 +33,17 @@ export default function CaseStudies() {
   return (
     <section className="py-16 bg-[#194142] text-white ">
       <div className="container mx-auto px-4 text-center flex flex-col items-center gap-8 justify-center ">
-        <h2 className="text-3xl font-bold mb-2">Case Studies</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-2">Case Studies</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 ">
           {steps.map((step) => (
             <div
               key={step.id}
-              className="flex flex-col items-center bg-white text-black p-6 rounded-2xl shadow hover:shadow-lg transition"
+              className="flex flex-col items-center bg-white text-black md:p-6 p-4 rounded-2xl shadow hover:shadow-lg transition"
             >
               <div className="mb-4">{step.icon}</div>
               <span className="text-sm font-bold text-[#194142]">{step.id}</span>
-              <h3 className="text-lg font-semibold mt-2 mb-2">{step.title}</h3>
+              <h3 className="text-sm md:text-lg font-semibold mt-2 mb-2">{step.title}</h3>
             </div>
           ))}
         </div>

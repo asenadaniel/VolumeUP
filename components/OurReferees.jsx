@@ -10,7 +10,7 @@ function OurReferees() {
         title=" Our Referees"
         description="Companies we have partner with in over the past few years."
       />
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto text-gray-700 leading-relaxed">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl text-sm md:text-lg mx-auto text-gray-700 leading-relaxed">
         {[
           { title: "Livespot360", icon: "/livespot360.jpg" },
           { title: "Wakanow", icon: "/wakanow.jpg" },

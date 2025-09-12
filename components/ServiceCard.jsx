@@ -10,20 +10,20 @@ function ServiceCard({ service, index }) {
 
       <div className=' pointer-events-none blur-2xl rounded-full bg-gradient-to-r from-red-300 via-red-200 to-red-700 w-[300px] h-[300px] absolute z-0 transition-opacity duration-500 mix-blend-lighten opacity-70' style={{ top: position.y - 150, left: position.x - 150 }}></div>
 
-        <div className=' flex items-center gap-10 p-8 hover:p-7.5 hover:m-0.5 transition-all rounded-[10px] bg-white z-10 relative' >
+      <div className=' flex items-center gap-10 p-8 hover:p-7.5 hover:m-0.5 transition-all rounded-[10px] bg-white z-10 relative' >
 
-          <div className=' bg-gray-100 rounded-full'>
-            <div className="max-w-24 bg-white m-2">{service.icon}
-            </div>
-            <div className=' flex-1'>
-              <h3 className="text-lg font-semibold">{service.title}
-              </h3>
-
-            </div>
+        <div className=' bg-gray-100 rounded-full'>
+          <div className="max-w-24 bg-white m-2">{service.icon}
+          </div>
+          <div className=' flex-1'>
+            <h3 className="md:text-lg text-sm font-semibold">{service.title}
+            </h3>
 
           </div>
+
         </div>
-     
+      </div>
+
     </div>
   )
 }
