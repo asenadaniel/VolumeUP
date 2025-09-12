@@ -22,8 +22,8 @@ function Navbar() {
       {/* Menu */}
       <div
         className={`text-gray-700 sm:text-sm ${open ? 'max-sm:w-60 max-sm:pl-10' : 'max-sm:w-0 max-sm:overflow-hidden '}
-          max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-white max-sm:border-l-5 max-sm:border-red-900
-          max-sm:text-bl max-sm:pt-20 flex sm:items-center gap-5 transition-all duration-300 ease-in-out`}
+          max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-[#482928] max-sm:border-l-5 max-sm:border-red-900
+          max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all duration-300 ease-in-out`}
       >
         {/* Mobile header [#482928]*/}
         <div className=' border-black border-b-2'>
@@ -39,7 +39,7 @@ function Navbar() {
             src={assets.close_icon}
             width={20}
             height={20}
-            className="absolute right-4 bg-rose-900 top-8 sm:hidden cursor-pointer"
+            className="absolute right-4  top-8 sm:hidden cursor-pointer"
             alt="close icon"
             onClick={() => setOpen(false)}
           />
