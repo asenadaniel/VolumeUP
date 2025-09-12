@@ -8,7 +8,7 @@ const strategies = [
 
 export default function GrowthStrategy() {
   return (
-    <section className="py-16 px-6 lg:px-24 bg-gradient-to-br from-[#72120e] via-red-900 to-red-700 text-white">
+    <section className="py-16 px-6 lg:px-24 bg-red-800 text-white">
       <div className="max-w-3xl mx-auto">
         {/* Section Title */}
         <h2 className="text-center text-3xl font-bold text-orange-400 mb-12">
@@ -24,7 +24,7 @@ export default function GrowthStrategy() {
                 {String(index + 1).padStart(2, "0")}
               </div>
               {/* Text */}
-              <p className="text-lg">{item}</p>
+              <p className="text-lg font-bold">{item}</p>
             </div>
           ))}
         </div>
