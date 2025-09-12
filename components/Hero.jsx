@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 
 function Hero() {
   return (
-    <div id='home' className=' flex flex-col items-center gap-6 py-[100px] px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700'>
+    <div id='home' className=' flex flex-col items-center gap-6 py-[90px] px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700'>
 
       <motion.div
         initial={{ opacity: 0, y: 50 }}
