@@ -1,4 +1,6 @@
+'use client'
 import { Lightbulb, Search, ClipboardList, Rocket, Megaphone, Package } from "lucide-react";
+import { motion } from "motion/react"
 
 const steps = [
   {
@@ -43,8 +45,21 @@ export default function Process() {
   return (
     <section className="py-16 bg-[#3479ae] text-white">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-2">OUR PROCESS</h2>
-        <p className="mb-12 font-bold opacity-90">Our operational frame</p>
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+
+          className="text-3xl font-bold mb-2">OUR PROCESS</motion.h2>
+        <motion.p
+
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+
+          className="mb-12 font-bold opacity-90">Our operational frame</motion.p>
 
         <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-8">
           {steps.map((step) => (
@@ -54,8 +69,21 @@ export default function Process() {
             >
               <div className="mb-4">{step.icon}</div>
               <span className="text-sm font-bold text-[#3479ae]">{step.id}</span>
-              <h3 className="text-lg font-semibold mt-2 mb-2">{step.title}</h3>
-              <p className="text-sm font-bold text-gray-600">{step.desc}</p>
+              <motion.h3
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+
+                className="text-lg font-semibold mt-2 mb-2">{step.title}</motion.h3>
+              <motion.p
+
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+
+                className="text-sm font-bold text-gray-600">{step.desc}</motion.p>
             </div>
           ))}
         </div>

@@ -1,6 +1,8 @@
+'use client'
 import React from "react";
 import TeamCard from "./TeamCard";
 import Title from "./Title";
+import { motion } from "motion/react"
 
 
 function Team() {
@@ -57,7 +59,12 @@ function Team() {
 
 
   return (
-    <div
+    <motion.div
+
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: true }}
+
       id="team"
       className="flex flex-col items-center gap-6 px-4 sm:px-12 lg:px-24 xl:px-40 py-16 bg-gray-50"
     >
@@ -66,12 +73,18 @@ function Team() {
         description="A passionate team of marketing and media experts committed to driving your brand’s success."
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-5xl">
+      <motion.div
+
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.1 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-5xl">
         {members.map((member, index) => (
           <TeamCard key={index} member={member} />
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

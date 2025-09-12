@@ -38,17 +38,40 @@ function Services() {
 
       <div className='max-w-3xl mx-auto flex flex-col gap-4 mt-10'>
 
-        <h3 className='text-[#72120e] font-bold'>WE ENGAGE ALL FORMS OF MEDIA
-        </h3>
-        <p>
+        <motion.h3
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+
+          className='text-[#72120e] font-bold'>WE ENGAGE ALL FORMS OF MEDIA
+        </motion.h3>
+        <motion.p
+
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           Our key objective is to promote brands, build preference and increase sales through various online marketing techniques. We believe the 21st century is fuelled by a digital revolution gradually obsoleting traditional media. Our experience combines traditional and new media to build brand visibility and increased following.
-        </p>
-        <h3 className='text-[#72120e] font-bold'>BRAND ACTIVATION
-        </h3>
-        <p>
+        </motion.p>
+        <motion.h3
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+
+          className='text-[#72120e] font-bold'>BRAND ACTIVATION
+        </motion.h3>
+        <motion.p
+
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}>
           The accuracy of brand activation is largely enhanced by creative concepts matching adequate customer profiling. It is the seamless integration of all available communication means in a creative platform in order to activate customers. We continuously deliver the major objectives of brand activation, which are to stimulate customer interest, product trial and customer loyalty.
 
-        </p>
+        </motion.p>
 
         <GrowthStrategy />
       </div>

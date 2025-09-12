@@ -1,4 +1,6 @@
+'use client'
 import { Target, PlayCircle, BarChart3, Trophy, Lightbulb, Dot } from "lucide-react";
+import { motion } from "motion/react"
 
 const steps = [
   {
@@ -33,7 +35,14 @@ export default function CaseStudies() {
   return (
     <section className="py-16 bg-[#194142] text-white ">
       <div className="container mx-auto px-4 text-center flex flex-col items-center gap-8 justify-center ">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2">Case Studies</h2>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+
+          className="text-2xl md:text-3xl font-bold mb-2">Case Studies</motion.h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 ">
           {steps.map((step) => (
@@ -43,7 +52,11 @@ export default function CaseStudies() {
             >
               <div className="mb-4">{step.icon}</div>
               <span className="text-sm font-bold text-[#194142]">{step.id}</span>
-              <h3 className="text-sm md:text-lg font-semibold mt-2 mb-2">{step.title}</h3>
+              <motion.h3
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }} className="text-sm md:text-lg font-semibold mt-2 mb-2">{step.title}</motion.h3>
             </div>
           ))}
         </div>

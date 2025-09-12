@@ -3,21 +3,38 @@ import useActiveSection from '@/hooks/useActiveSection';
 import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
+import { motion } from "motion/react"
+
 
 function Footer() {
   const active = useActiveSection(["home", "services", "our-work", "contact-us"]);
 
   return (
-    <div className='bg-slate-100 pt-10 sm:pt-10 mt-20 sm:mt-40 px-4 sm:px-10 lg:px-24 xl:px-40'>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+
+
+      className='bg-slate-100 pt-10 sm:pt-10 mt-20 sm:mt-40 px-4 sm:px-10 lg:px-24 xl:px-40'>
 
       <div className=' flex justify-between lg:items-center max-lg:flex-col gap-10'>
-        <div className=' space-y-5 text-sm text-gray-700'>
-          <div className=' flex items-center gap-2 mb-4'>
+
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+
+
+          className=' space-y-5 text-sm text-gray-700'>
+          <motion.div className=' flex items-center gap-2 mb-4'>
             <Image src="/volume.jpg" alt="VolumeUpDotCom Logo" width={50} height={50} />
             <Link href="/#home" className="font-bold text-lg md:text-xl text-[#bc383b]">
               VolumeUp
             </Link>
-          </div>
+          </motion.div>
           <p className=' max-w-md'>From strategy to execution, we deliver marketing, media, and logistics solutions that bring your brand to life.</p>
 
           <ul className='flex gap-8'>
@@ -50,19 +67,26 @@ function Footer() {
               </Link>
             </li>
           </ul>
-        </div>
+        </motion.div>
 
 
       </div>
       <hr className='border-gray-700 my-6 border-3' />
-      <div className=' text-sm text-gray-700 space-y-2'>
+      <motion.div
+
+        initial={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        viewport={{ once: true }}
+
+        className=' text-sm text-gray-700 space-y-2'>
         <p>
           Copyright {new Date().getFullYear()} ©  All rights reserved.
         </p>
         <div className=' flex items-center justify-between gap-4'></div>
-      </div>
+      </motion.div>
 
-    </div>
+    </motion.div>
   )
 }
 

@@ -14,9 +14,9 @@ function Title({ title, description }) {
         className=' text-2xl text-center text-[#72120e] sm:text-3xl font-bold'>{title}
       </motion.h2>
       <motion.p
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true }}
 
         className=' max-w-lg text-center text-gray-500 mb-6'>{description}</motion.p>

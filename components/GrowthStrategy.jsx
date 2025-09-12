@@ -1,4 +1,6 @@
+'use client'
 import React from "react";
+import { motion } from "motion/react"
 
 const strategies = [
   "Increased engagement scope with present clients",
@@ -8,7 +10,14 @@ const strategies = [
 
 export default function GrowthStrategy() {
   return (
-    <section className="py-16 px-6 lg:px-24 bg-red-800 text-white">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6, delay: 0.5 }}
+      viewport={{ once: true }}
+
+
+      className="py-16 px-6 lg:px-24 bg-red-800 text-white">
       <div className="max-w-3xl mx-auto">
         {/* Section Title */}
         <h2 className="text-center text-3xl font-bold text-orange-400 mb-12">
@@ -29,6 +38,6 @@ export default function GrowthStrategy() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 }

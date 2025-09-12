@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { OurWorkImg } from '@/public/assets/assets'
 import Title from "./Title";
+import { motion } from "motion/react"
 
 
 export default function OurWorkGallery() {
@@ -17,9 +18,18 @@ export default function OurWorkGallery() {
     <div id='our-work' className="flex flex-col items-center gap-6 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700">
       <Title title='Events & Activation' description='We transform ideas into experiences that spark engagement and lasting impressions.' />
       {/* Images */}
-      <div className="grid md:grid-cols-2  gap-6 ">
+      <div
+
+        className="grid md:grid-cols-2  gap-6 ">
         {currentItems.map((img, index) => (
-          <div key={index} className="rounded-xl overflow-hidden sm:hover:scale-110 transition-all cursor-pointer shadow border-[#b51168] border-[10px]">
+          <motion.div
+
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+
+            key={index} className="rounded-xl overflow-hidden sm:hover:scale-110 transition-all cursor-pointer shadow border-[#b51168] border-[10px]">
             <Image
               src={img}
               width={400}
@@ -27,7 +37,7 @@ export default function OurWorkGallery() {
               alt={`Our Work ${start + index + 1}`}
               className="object-contain w-full h-64"
             />
-          </div>
+          </motion.div>
         ))}
       </div>
 

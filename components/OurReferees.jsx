@@ -1,6 +1,8 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import Title from "./Title";
+import { motion } from "motion/react"
 
 
 function OurReferees() {
@@ -19,8 +21,14 @@ function OurReferees() {
           { title: "Vista", icon: "/visita.jpg" },
           { title: "Expose", icon: "/expose.jpg" },
         ].map((company) => (
-          <div
+          <motion.div
+
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
             key={company.title}
+
             className="p-4 bg-white rounded-xl shadow hover:shadow-md transition flex items-center gap-3"
           >
             <Image
@@ -31,7 +39,7 @@ function OurReferees() {
               className="object-contain"
             />
             <p className="font-semibold">{company.title}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
