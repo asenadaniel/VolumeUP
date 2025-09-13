@@ -9,6 +9,19 @@ function Hero() {
     <div id='home' className=' flex flex-col items-center gap-6 py-[90px] px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700'>
 
       <motion.div
+        animate={{ rotate: 360 }}
+        transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
+        className="w-[50px] h-[50px] relative"
+      >
+        <Image
+          src="/volume.jpg"
+          alt="VolumeUpDotCom Logo"
+          fill
+          className="object-contain"
+        />
+      </motion.div>
+
+      <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.8 }}
@@ -26,7 +39,20 @@ function Hero() {
         transition={{ duration: 0.5, delay: 1 }}
         viewport={{ once: true }}
 
-        className='max-w-3xl mx-auto'> <span className=' font-extrabold'>Volume Up Dot Com Limited</span> is a Nigerian experiential <span className=' font-semibold text-[#72120e]'>Marketing</span>, <span className=' font-semibold  text-[#72120e]'>Media</span> and <span className=' font-semibold  text-[#72120e]'>Logistics</span> consulting firm. We deploy strategic solutions that help brands extract value and build market leadership.</motion.h1>
+        className=' text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font medium xl:leading-[95px] max-w-5xl mx-auto'>
+
+
+
+      </motion.h1>
+      <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 1 }}
+        viewport={{ once: true }}
+
+        className='max-w-3xl mx-auto'> <span className=' font-extrabold text-black'>Volume Up Dot Com Limited</span> is a Nigerian experiential <span className=' font-semibold text-[#72120e]'>Marketing</span>, <span className=' font-semibold  text-[#72120e]'>Media</span> and <span className=' font-semibold  text-[#72120e]'>Logistics</span> consulting firm. We deploy strategic solutions that help brands extract value and build market leadership.
+
+      </motion.h1>
 
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
