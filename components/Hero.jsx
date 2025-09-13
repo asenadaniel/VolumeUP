@@ -6,7 +6,8 @@ import { motion } from "motion/react"
 
 function Hero() {
   return (
-    <div id='home' className=' flex flex-col items-center gap-6 py-[80px] px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700'>
+    <div id='home' className="flex flex-col items-center gap-6 pt-10 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700"
+    >
 
       <motion.div
         animate={{ rotate: 360 }}
@@ -21,7 +22,7 @@ function Hero() {
         />
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.8 }}
@@ -31,7 +32,7 @@ function Hero() {
         <Image
           src={assets.group_profile} width={30} height={30} alt='group' />
         <p className=' text-xs font-medium'>Trusted by people</p>
-      </motion.div>
+      </motion.div> */}
 
       <motion.h1
         initial={{ opacity: 0, y: 40 }}

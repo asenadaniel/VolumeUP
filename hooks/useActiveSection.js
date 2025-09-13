@@ -12,21 +12,13 @@ export default function useActiveSection(sectionIds) {
     if (elements.length === 0) return;
 
     const handleScroll = () => {
-      let maxVisible = 0;
-      let currentSection = active;
+      let currentSection = "home"; // fallback
 
       elements.forEach((el) => {
         const rect = el.getBoundingClientRect();
+        const offset = 120; // 👈 adjust this for navbar height
 
-        // skip sections that are fully above or below viewport
-        if (rect.bottom < 0 || rect.top > window.innerHeight) return;
-
-        const visibleHeight =
-          Math.min(window.innerHeight, rect.bottom) -
-          Math.max(0, rect.top);
-
-        if (visibleHeight > maxVisible) {
-          maxVisible = visibleHeight;
+        if (rect.top - offset <= 0 && rect.bottom - offset > 0) {
           currentSection = el.id;
         }
       });
@@ -36,7 +28,7 @@ export default function useActiveSection(sectionIds) {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll(); // run once on mount
 
     return () => window.removeEventListener("scroll", handleScroll);
