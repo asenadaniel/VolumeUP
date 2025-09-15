@@ -2,7 +2,6 @@
 import assets from '@/public/assets/assets'
 import Image from 'next/image'
 import React from 'react'
-import Link from 'next/link'
 import { motion } from "motion/react"
 
 function Hero() {

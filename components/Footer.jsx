@@ -68,8 +68,21 @@ function Footer() {
             </li>
           </ul>
         </motion.div>
+        <div>
+          <div>
+            <h3 className='text-[#bc383b] font-medium'>Contact Address</h3>
 
+            <p className=' text-gray-700'>
+              Block D8, Diamond Estate, Phase 3, Igando Road, Alimosho, Lagos
+            </p>
+            <p className=' text-gray-700'>
+              e.volumeupdotcomltd@gmail.com | sammyjan11@gmail.com
+            </p>
+          </div>
+          <div>
 
+          </div>
+        </div>
       </div>
       <hr className='border-gray-700 my-6 border-3' />
       <motion.div
