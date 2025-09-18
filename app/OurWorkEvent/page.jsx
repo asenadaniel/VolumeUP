@@ -120,12 +120,23 @@ export default function EventsPage() {
       </div>
 
       {/* ✅ Return Button */}
-      <Link
-        href="/#our-work"
-        className="mt-12 px-6 py-3 bg-[#72120e] text-white rounded-lg hover:scale-105 transition"
-      >
-        ← Back to Home
-      </Link>
+      <motion.div
+
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}>
+        <Link
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          href="/#our-work"
+          className="mt-12 px-6 py-3 bg-[#72120e] text-white rounded-lg hover:scale-105 transition"
+        >
+          ← Back to Home
+        </Link>
+      </motion.div>
     </div>
   );
 }
