@@ -98,7 +98,7 @@ function Navbar() {
 
         {/* Connect button */}
         <a
-          href="#contact-us"
+          href="/#contact-us"
           className="text-sm max-sm:hidden flex items-center gap-2 bg-[#72120e] text-white px-6 py-2 rounded-full hover:scale-105 transition-all"
         >
           Connect
