@@ -3,6 +3,7 @@ import React from "react";
 import Title from "@/components/Title";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 const videos = [
   "/32.mp4",
@@ -61,7 +62,11 @@ export default function EventsPage() {
         <h2 className="text-2xl font-semibold mb-6">Event Videos</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {videos.map((src, i) => (
-            <video
+            <motion.video
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
               key={i}
               src={src}
               controls
@@ -74,9 +79,19 @@ export default function EventsPage() {
       {/* Images Section */}
       <div className="w-full">
         <h2 className="text-2xl font-semibold mb-6">Event Gallery</h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {images.map((src, i) => (
-            <div key={i} className="overflow-hidden rounded-lg shadow-md">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              key={i} className="overflow-hidden rounded-lg shadow-md">
               <Image
                 src={src}
                 alt={`Event ${i + 1}`}
@@ -84,9 +99,9 @@ export default function EventsPage() {
                 height={300}
                 className="object-cover w-full h-64 hover:scale-105 transition-transform"
               />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
       {/* ✅ Return Button */}
