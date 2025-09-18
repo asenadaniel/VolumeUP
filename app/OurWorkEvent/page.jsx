@@ -37,7 +37,11 @@ export default function EventsPage() {
     <div className="flex flex-col items-center gap-10 px-6 sm:px-12 lg:px-24 xl:px-40 py-16 text-gray-700">
 
       {/* ✅ Breadcrumbs */}
-      <nav className="w-full text-sm mb-6">
+      <motion.nav
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }} className="w-full text-sm mb-6">
         <ol className="flex items-center space-x-2 text-gray-500">
           <li>
             <Link href="/#home" className="hover:text-[#72120e]">Home</Link>
@@ -49,7 +53,7 @@ export default function EventsPage() {
           <li className="text-gray-400">/</li>
           <li className="text-[#72120e] font-semibold">Events & Activations</li>
         </ol>
-      </nav>
+      </motion.nav>
 
       {/* Title */}
       <Title
@@ -59,7 +63,13 @@ export default function EventsPage() {
 
       {/* Videos Section */}
       <div className="w-full">
-        <h2 className="text-2xl font-semibold mb-6">Event Videos</h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+
+          className="text-2xl font-semibold mb-6">Event Videos</motion.h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {videos.map((src, i) => (
             <motion.video
@@ -78,7 +88,12 @@ export default function EventsPage() {
 
       {/* Images Section */}
       <div className="w-full">
-        <h2 className="text-2xl font-semibold mb-6">Event Gallery</h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-2xl font-semibold mb-6">Event Gallery</motion.h2>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
