@@ -1,38 +1,56 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function useActiveSection(sectionIds) {
-  const [active, setActive] = useState("home"); // default to home
+export default function useActiveSection(sections) {
+  const [active, setActive] = useState(sections[0]);
 
   useEffect(() => {
-    const elements = sectionIds
-      .map((id) => document.getElementById(id))
-      .filter(Boolean);
-
-    if (elements.length === 0) return;
+    // Check hash on page load
+    if (window.location.hash) {
+      const hash = window.location.hash.replace("#", "");
+      if (sections.includes(hash)) {
+        setActive(hash);
+      }
+    }
 
     const handleScroll = () => {
-      let currentSection = "home"; // fallback
+      let closestSection = sections[0];
+      let minDistance = Infinity;
 
-      elements.forEach((el) => {
-        const rect = el.getBoundingClientRect();
-        const offset = 120; // 👈 adjust this for navbar height
+      for (let section of sections) {
+        const el = document.getElementById(section);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          const distance = Math.abs(rect.top); // distance from top of viewport
 
-        if (rect.top - offset <= 0 && rect.bottom - offset > 0) {
-          currentSection = el.id;
+          if (distance < minDistance) {
+            minDistance = distance;
+            closestSection = section;
+          }
         }
-      });
+      }
 
-      if (currentSection !== active) {
-        setActive(currentSection);
+      setActive(closestSection);
+    };
+
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace("#", "");
+      if (sections.includes(hash)) {
+        setActive(hash);
       }
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // run once on mount
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("hashchange", handleHashChange);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [sectionIds, active]);
+    // Run once
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, [sections]);
 
   return active;
 }
