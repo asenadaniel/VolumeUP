@@ -53,7 +53,7 @@ export default function EventsPage() {
       {/* Title */}
       <Title
         title="Our Events & Activations"
-        description="A showcase of the impactful experiences we’ve created — from strategy to unforgettable brand activations."
+        description="A showcase of the impactful experiences we’ve created from strategy to unforgettable brand activations."
       />
 
       {/* Videos Section */}
