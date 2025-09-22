@@ -19,7 +19,8 @@ function OurReferees() {
           { title: "Nitro 121", icon: "/nitro121.jpg" },
           { title: "Stinos", icon: "/stinos.jpg" },
           { title: "Vista", icon: "/visita.jpg" },
-          { title: "Expose", icon: "/expose.jpg" },
+          { title: "TrueCaller", icon: "/truecaller.jpg" },
+          { title: "SwitchOnline", icon: "/switchonline.jpg" },
         ].map((company) => (
           <motion.div
 
