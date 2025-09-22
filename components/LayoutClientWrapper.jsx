@@ -7,6 +7,7 @@ export default function LayoutClientWrapper({ children }) {
     <div className="relative">
       <Navbar />
       {children}
+      <Footer />
     </div>
   );
 }

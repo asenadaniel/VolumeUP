@@ -7,7 +7,6 @@ import OurReferees from "@/components/OurReferees";
 import CaseStudies from "@/components/CaseStudies";
 import OurWork from "@/components/OurWork";
 import Team from "@/components/Team";
-import Footer from "@/components/Footer";
 import ContactUs from "@/components/ContactUs";
 import { Toaster } from 'react-hot-toast'
 
@@ -27,7 +26,7 @@ export default function Home() {
       <OurWork />
       <Team />
       <ContactUs />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

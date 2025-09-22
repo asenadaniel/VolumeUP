@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
 import { motion } from "motion/react"
+import { Instagram } from 'lucide-react';
 
 
 function Footer() {
@@ -92,11 +93,16 @@ function Footer() {
         transition={{ duration: 0.5, delay: 0.4 }}
         viewport={{ once: true }}
 
-        className=' text-sm text-gray-700 space-y-2'>
+        className=' text-sm text-gray-700 space-y-2 flex items-center justify-between gap-4'>
         <p>
           Copyright {new Date().getFullYear()} ©  All rights reserved.
-        </p>
-        <div className=' flex items-center justify-between gap-4'></div>
+        </p> <div className=' flex items-center gap-4 '>
+          <Link href='https://www.instagram.com/volumeuplogistics?igsh=MXFsaHg3eWlpb2YyeQ==' target='/' className=' flex gap-1'>
+            <Instagram /> instagram
+
+          </Link>
+        </div>
+
       </motion.div>
 
     </motion.div>
