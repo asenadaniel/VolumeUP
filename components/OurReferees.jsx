@@ -30,7 +30,7 @@ function OurReferees() {
             viewport={{ once: true }}
             key={company.title}
 
-            className="p-4 bg-white rounded-xl shadow hover:shadow-md transition flex items-center gap-3"
+            className="p-5 bg-white rounded-xl shadow hover:shadow-md transition flex items-center gap-3"
           >
             <Image
               src={company.icon}
