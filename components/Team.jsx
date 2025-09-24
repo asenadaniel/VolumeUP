@@ -19,24 +19,24 @@ function Team() {
       image: "/B.jpg",
       bio: "Former First Bank staff with experience in finance, film, and experiential marketing. Her administrative expertise and strong knowledge of Eastern Nigeria have been vital to the company’s growth.",
     },
-    {
-      name: "David Aleshinloye",
-      role: "Business Development Manager",
-      image: "/C.jpg",
-      bio: "Over 10 years’ experience in media, marketing, and advertising. Former Group Head of Operations at JWT LTC Group. Graduate of UI, and trained at the Institute of Management Sidney and Polytechnic West Sidney.",
-    },
-    {
-      name: "Samuel Fagbemi",
-      role: "Executive Director (Legrunners)",
-      image: "/D.jpg",
-      bio: "Advertising professional with 20+ years’ experience managing operations in agencies like Towncriers, CRM, and Maxxconnection. Led award-winning activations for brands such as Oando, Zikel Cosmetics, and BAT Brands.",
-    },
-    {
-      name: "Ololade Fagbohunlu",
-      role: "Project Director",
-      image: "/E.jpg",
-      bio: "Digital marketing expert with 10+ years’ experience working with BAT, MTN, Mobil, Nestle, and Diageo. Previously at Abelinis, Tequila, and an SA agency before joining Volume Up in 2019.",
-    },
+    // {
+    //   name: "David Aleshinloye",
+    //   role: "Business Development Manager",
+    //   image: "/C.jpg",
+    //   bio: "Over 10 years’ experience in media, marketing, and advertising. Former Group Head of Operations at JWT LTC Group. Graduate of UI, and trained at the Institute of Management Sidney and Polytechnic West Sidney.",
+    // },
+    // {
+    //   name: "Samuel Fagbemi",
+    //   role: "Executive Director (Legrunners)",
+    //   image: "/D.jpg",
+    //   bio: "Advertising professional with 20+ years’ experience managing operations in agencies like Towncriers, CRM, and Maxxconnection. Led award-winning activations for brands such as Oando, Zikel Cosmetics, and BAT Brands.",
+    // },
+    // {
+    //   name: "Ololade Fagbohunlu",
+    //   role: "Project Director",
+    //   image: "/E.jpg",
+    //   bio: "Digital marketing expert with 10+ years’ experience working with BAT, MTN, Mobil, Nestle, and Diageo. Previously at Abelinis, Tequila, and an SA agency before joining Volume Up in 2019.",
+    // },
     {
       name: "Michael Adewoye",
       role: "Field General",
