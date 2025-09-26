@@ -12,7 +12,7 @@ const steps = [
   {
     id: "02",
     title: "Reporting & Insights",
-    desc: "In field reports sent on daily and weekly basis.",
+    desc: "In-field reports sent on daily and weekly basis.",
     icon: <BarChart3 className="w-10 h-10 text-red-600" />,
   },
   {
@@ -59,7 +59,7 @@ export default function MarketBestPracticeAdoption() {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
 
-          className="mb-12 font-bold opacity-90">We keep project files where all dealings and learnings relating to the projects are stored. The dealings include;
+          className="mb-12 font-bold opacity-90">We keep project files where all dealings and learnings relating to the projects are stored. These dealings include:
         </motion.p>
 
         <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-8">

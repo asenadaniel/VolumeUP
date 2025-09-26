@@ -76,9 +76,11 @@ function Footer() {
             <p className=' text-gray-700'>
               Block D8, Diamond Estate, Phase 3, Igando Road, Alimosho, Lagos
             </p>
-            <p className=' text-gray-700'>
+            <p className=' text-gray-700 '>
               e.volumeupdotcomltd@gmail.com | sammyjan11@gmail.com
             </p>
+            <p className=' text-gray-700 '>08035499944 & 08028287435</p>
+
           </div>
           <div>
 
