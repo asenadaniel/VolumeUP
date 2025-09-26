@@ -10,7 +10,7 @@ function OurReferees() {
     <div id='services' className=' relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 py-18 text-gray-700'>
       <Title
         title=" Our Clients"
-        description="Companies we have partnered with in over the past few years."
+        description="Companies we have partnered with over the past few years."
       />
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl text-sm md:text-lg mx-auto text-gray-700 leading-relaxed">
         {[
