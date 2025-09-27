@@ -18,25 +18,25 @@ const steps = [
   {
     id: "03",
     title: "Initiation & Planning",
-    desc: "Brief, response, work breakdown structure, approvals, project plan.",
+    desc: "Brief, response, work breakdown structure, approvals, project Management plan, Align & Agree, Sign Offs Project Charter/PO.",
     icon: <ClipboardList className="w-10 h-10 text-[#3479ae]" />,
   },
   {
     id: "04",
     title: "Execution",
-    desc: "Commission project team, get approvals, execute.",
+    desc: "Commission project team, Get required approvals/permits, execute.",
     icon: <Rocket className="w-10 h-10 text-[#3479ae]" />,
   },
   {
     id: "05",
     title: "Monitoring & Control",
-    desc: "Reviews, audit, reporting, risk & quality control, integrated change.",
+    desc: "Periodic Reviews & audit, Classic Mystery, reporting, Risk & Quality Control, Integrated Change Control.",
     icon: <Megaphone className="w-10 h-10 text-[#3479ae]" />,
   },
   {
     id: "06",
     title: "Evaluation & Closing",
-    desc: "Performance assessment, learning, reconciliation, disengagement.",
+    desc: "Performance assessment, learning, reconciliation(Budget and materials), Disengagement Contract.",
     icon: <Package className="w-10 h-10 text-[#3479ae]" />,
   },
 ];

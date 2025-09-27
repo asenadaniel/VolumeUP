@@ -6,7 +6,7 @@ const steps = [
   {
     id: "01",
     title: "Record keeping",
-    desc: " clients on the project, Contact reports, meetings minutes, scope change documents",
+    desc: " Clients on the project, Contact reports, Meetings minutes, Scope Change Documents",
     icon: <FileText className="w-10 h-10 text-red-600" />,
   },
   {
