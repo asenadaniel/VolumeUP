@@ -59,7 +59,7 @@ export default function Process() {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
 
-          className="mb-12 font-bold opacity-90">Our operational frame</motion.p>
+          className="mb-12 font-bold opacity-90">Our Operational Frame</motion.p>
 
         <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-8">
           {steps.map((step) => (
