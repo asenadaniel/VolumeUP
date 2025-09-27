@@ -36,7 +36,7 @@ const steps = [
   {
     id: "06",
     title: "Evaluation & Closing",
-    desc: "Performance assessment, learning, reconciliation(Budget and materials), Disengagement Contract.",
+    desc: "Performance Assessment, Learning, Reconciliation(Budget and materials), Disengagement Contract.",
     icon: <Package className="w-10 h-10 text-[#3479ae]" />,
   },
 ];
