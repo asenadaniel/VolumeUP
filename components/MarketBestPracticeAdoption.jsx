@@ -6,7 +6,7 @@ const steps = [
   {
     id: "01",
     title: "Record keeping",
-    desc: " client on the project. Contact reports, meetings minutes, scope change documents",
+    desc: " clients on the project, Contact reports, meetings minutes, scope change documents",
     icon: <FileText className="w-10 h-10 text-red-600" />,
   },
   {
@@ -59,7 +59,7 @@ export default function MarketBestPracticeAdoption() {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
 
-          className="mb-12 font-bold opacity-90">We keep project files where all dealings and learnings relating to the projects are stored. These dealings include:
+          className="mb-12 font-bold opacity-90">We keep project files where all dealings and learnings relating to the projects are stored. This dealings include:
         </motion.p>
 
         <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-8">
