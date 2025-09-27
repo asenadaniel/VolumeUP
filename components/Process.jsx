@@ -18,7 +18,7 @@ const steps = [
   {
     id: "03",
     title: "Initiation & Planning",
-    desc: "Brief, response, work breakdown structure, approvals, project Management plan, Align & Agree, Sign Offs Project Charter/PO.",
+    desc: "Brief Response, Work Breakdown Structure, Project Management Plan, Align & Agree, Sign Offs Project Charter/PO.",
     icon: <ClipboardList className="w-10 h-10 text-[#3479ae]" />,
   },
   {
