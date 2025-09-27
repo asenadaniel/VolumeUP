@@ -30,7 +30,7 @@ const steps = [
   {
     id: "05",
     title: "Monitoring & Control",
-    desc: "Periodic Reviews & audit, Classic Mystery, Reporting, Risk & Quality Control, Integrated Change Control.",
+    desc: "Periodic Reviews & Audit, Classic Mystery, Reporting, Risk & Quality Control, Integrated Change Control.",
     icon: <Megaphone className="w-10 h-10 text-[#3479ae]" />,
   },
   {
