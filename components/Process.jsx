@@ -24,7 +24,7 @@ const steps = [
   {
     id: "04",
     title: "Execution",
-    desc: "Commission project team, Get required approvals/permits, execute.",
+    desc: "Commission Project Team, Get Required Approvals/Permits, Execute.",
     icon: <Rocket className="w-10 h-10 text-[#3479ae]" />,
   },
   {
