@@ -122,7 +122,7 @@ export const metadata = {
 };
 
 // 🔥 toggle this to true when you want maintenance mode
-const SITE_UNDER_MAINTENANCE = true;
+const SITE_UNDER_MAINTENANCE = false;
 
 export default function RootLayout({ children }) {
   const jsonLd = {
